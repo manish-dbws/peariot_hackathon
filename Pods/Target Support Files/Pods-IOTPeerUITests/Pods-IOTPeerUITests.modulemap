@@ -1,0 +1,6 @@
+framework module Pods_IOTPeerUITests {
+  umbrella header "Pods-IOTPeerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

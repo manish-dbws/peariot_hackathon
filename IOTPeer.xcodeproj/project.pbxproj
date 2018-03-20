@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EBCFCD784C54D1DF0002606 /* Pods_IOTPeer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CEDA253EC63C06F4A4A9C13 /* Pods_IOTPeer.framework */; };
+		3BA7B62AB1FF26C98603E6E3 /* Pods_IOTPeerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E8F11F7979869C9A9F7813 /* Pods_IOTPeerTests.framework */; };
+		721A8498206084CF00E01A0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721A8497206084CF00E01A0E /* AppDelegate.swift */; };
+		721A849A206084CF00E01A0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721A8499206084CF00E01A0E /* ViewController.swift */; };
+		721A849D206084CF00E01A0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 721A849B206084CF00E01A0E /* Main.storyboard */; };
+		721A84A0206084D000E01A0E /* IOTPeer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 721A849E206084D000E01A0E /* IOTPeer.xcdatamodeld */; };
+		721A84A2206084D000E01A0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 721A84A1206084D000E01A0E /* Assets.xcassets */; };
+		721A84A5206084D000E01A0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 721A84A3206084D000E01A0E /* LaunchScreen.storyboard */; };
+		721A84B0206084D000E01A0E /* IOTPeerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721A84AF206084D000E01A0E /* IOTPeerTests.swift */; };
+		721A84BB206084D000E01A0E /* IOTPeerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721A84BA206084D000E01A0E /* IOTPeerUITests.swift */; };
+		721A84C92060C70100E01A0E /* IOTAPIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721A84C82060C70100E01A0E /* IOTAPIHelper.swift */; };
+		721A84CF2060ED2800E01A0E /* Nilland-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 721A84CE2060ED2800E01A0E /* Nilland-ExtraBold.ttf */; };
+		BE800854044E43C90613AA30 /* Pods_IOTPeerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB4A16A690ADAE74FFA0E18 /* Pods_IOTPeerUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		721A84AC206084D000E01A0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 721A848C206084CF00E01A0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 721A8493206084CF00E01A0E;
+			remoteInfo = IOTPeer;
+		};
+		721A84B7206084D000E01A0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 721A848C206084CF00E01A0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 721A8493206084CF00E01A0E;
+			remoteInfo = IOTPeer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		29B0CC381A1A33E74DFDA49C /* Pods-IOTPeerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOTPeerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOTPeerTests/Pods-IOTPeerTests.release.xcconfig"; sourceTree = "<group>"; };
+		2CFC2DD551CD8EA3C14ED4AC /* Pods-IOTPeerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOTPeerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOTPeerUITests/Pods-IOTPeerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A8CB44F052A88A045BE2E95 /* Pods-IOTPeerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOTPeerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOTPeerUITests/Pods-IOTPeerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		65E8F11F7979869C9A9F7813 /* Pods_IOTPeerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOTPeerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CEDA253EC63C06F4A4A9C13 /* Pods_IOTPeer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOTPeer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		721A8494206084CF00E01A0E /* IOTPeer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOTPeer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		721A8497206084CF00E01A0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		721A8499206084CF00E01A0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		721A849C206084CF00E01A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		721A849F206084D000E01A0E /* IOTPeer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IOTPeer.xcdatamodel; sourceTree = "<group>"; };
+		721A84A1206084D000E01A0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		721A84A4206084D000E01A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		721A84A6206084D000E01A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		721A84AB206084D000E01A0E /* IOTPeerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOTPeerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		721A84AF206084D000E01A0E /* IOTPeerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOTPeerTests.swift; sourceTree = "<group>"; };
+		721A84B1206084D000E01A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		721A84B6206084D000E01A0E /* IOTPeerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOTPeerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		721A84BA206084D000E01A0E /* IOTPeerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOTPeerUITests.swift; sourceTree = "<group>"; };
+		721A84BC206084D000E01A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		721A84C82060C70100E01A0E /* IOTAPIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOTAPIHelper.swift; sourceTree = "<group>"; };
+		721A84CA2060D2BB00E01A0E /* IOTPeer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IOTPeer-Bridging-Header.h"; sourceTree = "<group>"; };
+		721A84CE2060ED2800E01A0E /* Nilland-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nilland-ExtraBold.ttf"; sourceTree = "<group>"; };
+		7DA104E26C381ADD4DA208B6 /* Pods-IOTPeerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOTPeerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOTPeerTests/Pods-IOTPeerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ACCBEEB91AA0FACB087ABEA7 /* Pods-IOTPeer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOTPeer.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOTPeer/Pods-IOTPeer.release.xcconfig"; sourceTree = "<group>"; };
+		CDB4A16A690ADAE74FFA0E18 /* Pods_IOTPeerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOTPeerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4C766040D606136ECFEC24E /* Pods-IOTPeer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOTPeer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOTPeer/Pods-IOTPeer.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		721A8491206084CF00E01A0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EBCFCD784C54D1DF0002606 /* Pods_IOTPeer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		721A84A8206084D000E01A0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BA7B62AB1FF26C98603E6E3 /* Pods_IOTPeerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		721A84B3206084D000E01A0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE800854044E43C90613AA30 /* Pods_IOTPeerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09322B419B68C56E9F0E3460 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4C766040D606136ECFEC24E /* Pods-IOTPeer.debug.xcconfig */,
+				ACCBEEB91AA0FACB087ABEA7 /* Pods-IOTPeer.release.xcconfig */,
+				7DA104E26C381ADD4DA208B6 /* Pods-IOTPeerTests.debug.xcconfig */,
+				29B0CC381A1A33E74DFDA49C /* Pods-IOTPeerTests.release.xcconfig */,
+				2CFC2DD551CD8EA3C14ED4AC /* Pods-IOTPeerUITests.debug.xcconfig */,
+				5A8CB44F052A88A045BE2E95 /* Pods-IOTPeerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		721A848B206084CF00E01A0E = {
+			isa = PBXGroup;
+			children = (
+				721A8496206084CF00E01A0E /* IOTPeer */,
+				721A84AE206084D000E01A0E /* IOTPeerTests */,
+				721A84B9206084D000E01A0E /* IOTPeerUITests */,
+				721A8495206084CF00E01A0E /* Products */,
+				09322B419B68C56E9F0E3460 /* Pods */,
+				A544760C52D678464816CC8E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		721A8495206084CF00E01A0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				721A8494206084CF00E01A0E /* IOTPeer.app */,
+				721A84AB206084D000E01A0E /* IOTPeerTests.xctest */,
+				721A84B6206084D000E01A0E /* IOTPeerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		721A8496206084CF00E01A0E /* IOTPeer */ = {
+			isa = PBXGroup;
+			children = (
+				721A8497206084CF00E01A0E /* AppDelegate.swift */,
+				721A8499206084CF00E01A0E /* ViewController.swift */,
+				721A849B206084CF00E01A0E /* Main.storyboard */,
+				721A84A1206084D000E01A0E /* Assets.xcassets */,
+				721A84A3206084D000E01A0E /* LaunchScreen.storyboard */,
+				721A84A6206084D000E01A0E /* Info.plist */,
+				721A849E206084D000E01A0E /* IOTPeer.xcdatamodeld */,
+				721A84C82060C70100E01A0E /* IOTAPIHelper.swift */,
+				721A84CA2060D2BB00E01A0E /* IOTPeer-Bridging-Header.h */,
+				721A84CE2060ED2800E01A0E /* Nilland-ExtraBold.ttf */,
+			);
+			path = IOTPeer;
+			sourceTree = "<group>";
+		};
+		721A84AE206084D000E01A0E /* IOTPeerTests */ = {
+			isa = PBXGroup;
+			children = (
+				721A84AF206084D000E01A0E /* IOTPeerTests.swift */,
+				721A84B1206084D000E01A0E /* Info.plist */,
+			);
+			path = IOTPeerTests;
+			sourceTree = "<group>";
+		};
+		721A84B9206084D000E01A0E /* IOTPeerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				721A84BA206084D000E01A0E /* IOTPeerUITests.swift */,
+				721A84BC206084D000E01A0E /* Info.plist */,
+			);
+			path = IOTPeerUITests;
+			sourceTree = "<group>";
+		};
+		A544760C52D678464816CC8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CEDA253EC63C06F4A4A9C13 /* Pods_IOTPeer.framework */,
+				65E8F11F7979869C9A9F7813 /* Pods_IOTPeerTests.framework */,
+				CDB4A16A690ADAE74FFA0E18 /* Pods_IOTPeerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		721A8493206084CF00E01A0E /* IOTPeer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 721A84BF206084D000E01A0E /* Build configuration list for PBXNativeTarget "IOTPeer" */;
+			buildPhases = (
+				01F7DD1923E4D6CCC92F0428 /* [CP] Check Pods Manifest.lock */,
+				721A8490206084CF00E01A0E /* Sources */,
+				721A8491206084CF00E01A0E /* Frameworks */,
+				721A8492206084CF00E01A0E /* Resources */,
+				126F7D228C5BA642C5EF8C1B /* [CP] Embed Pods Frameworks */,
+				959D7CD751D153E2AE70B86D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IOTPeer;
+			productName = IOTPeer;
+			productReference = 721A8494206084CF00E01A0E /* IOTPeer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		721A84AA206084D000E01A0E /* IOTPeerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 721A84C2206084D000E01A0E /* Build configuration list for PBXNativeTarget "IOTPeerTests" */;
+			buildPhases = (
+				778181C90532CC59AC135FB2 /* [CP] Check Pods Manifest.lock */,
+				721A84A7206084D000E01A0E /* Sources */,
+				721A84A8206084D000E01A0E /* Frameworks */,
+				721A84A9206084D000E01A0E /* Resources */,
+				88DFA63B997A7079F64B4C4A /* [CP] Embed Pods Frameworks */,
+				ED93583AD415DFB2EA15FF0B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				721A84AD206084D000E01A0E /* PBXTargetDependency */,
+			);
+			name = IOTPeerTests;
+			productName = IOTPeerTests;
+			productReference = 721A84AB206084D000E01A0E /* IOTPeerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		721A84B5206084D000E01A0E /* IOTPeerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 721A84C5206084D000E01A0E /* Build configuration list for PBXNativeTarget "IOTPeerUITests" */;
+			buildPhases = (
+				5266A7018F48DEA61102A55E /* [CP] Check Pods Manifest.lock */,
+				721A84B2206084D000E01A0E /* Sources */,
+				721A84B3206084D000E01A0E /* Frameworks */,
+				721A84B4206084D000E01A0E /* Resources */,
+				EEB810FEA6961EDA274DDFF1 /* [CP] Embed Pods Frameworks */,
+				FD957C12640EC211F646075F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				721A84B8206084D000E01A0E /* PBXTargetDependency */,
+			);
+			name = IOTPeerUITests;
+			productName = IOTPeerUITests;
+			productReference = 721A84B6206084D000E01A0E /* IOTPeerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		721A848C206084CF00E01A0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Dark Bear";
+				TargetAttributes = {
+					721A8493206084CF00E01A0E = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					721A84AA206084D000E01A0E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 721A8493206084CF00E01A0E;
+					};
+					721A84B5206084D000E01A0E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 721A8493206084CF00E01A0E;
+					};
+				};
+			};
+			buildConfigurationList = 721A848F206084CF00E01A0E /* Build configuration list for PBXProject "IOTPeer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 721A848B206084CF00E01A0E;
+			productRefGroup = 721A8495206084CF00E01A0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				721A8493206084CF00E01A0E /* IOTPeer */,
+				721A84AA206084D000E01A0E /* IOTPeerTests */,
+				721A84B5206084D000E01A0E /* IOTPeerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		721A8492206084CF00E01A0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				721A84A5206084D000E01A0E /* LaunchScreen.storyboard in Resources */,
+				721A84CF2060ED2800E01A0E /* Nilland-ExtraBold.ttf in Resources */,
+				721A84A2206084D000E01A0E /* Assets.xcassets in Resources */,
+				721A849D206084CF00E01A0E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		721A84A9206084D000E01A0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		721A84B4206084D000E01A0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01F7DD1923E4D6CCC92F0428 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOTPeer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		126F7D228C5BA642C5EF8C1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IOTPeer/Pods-IOTPeer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOTPeer/Pods-IOTPeer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5266A7018F48DEA61102A55E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOTPeerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		778181C90532CC59AC135FB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOTPeerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88DFA63B997A7079F64B4C4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOTPeerTests/Pods-IOTPeerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		959D7CD751D153E2AE70B86D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOTPeer/Pods-IOTPeer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED93583AD415DFB2EA15FF0B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOTPeerTests/Pods-IOTPeerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEB810FEA6961EDA274DDFF1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOTPeerUITests/Pods-IOTPeerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD957C12640EC211F646075F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOTPeerUITests/Pods-IOTPeerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		721A8490206084CF00E01A0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				721A849A206084CF00E01A0E /* ViewController.swift in Sources */,
+				721A84A0206084D000E01A0E /* IOTPeer.xcdatamodeld in Sources */,
+				721A8498206084CF00E01A0E /* AppDelegate.swift in Sources */,
+				721A84C92060C70100E01A0E /* IOTAPIHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		721A84A7206084D000E01A0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				721A84B0206084D000E01A0E /* IOTPeerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		721A84B2206084D000E01A0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				721A84BB206084D000E01A0E /* IOTPeerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		721A84AD206084D000E01A0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 721A8493206084CF00E01A0E /* IOTPeer */;
+			targetProxy = 721A84AC206084D000E01A0E /* PBXContainerItemProxy */;
+		};
+		721A84B8206084D000E01A0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 721A8493206084CF00E01A0E /* IOTPeer */;
+			targetProxy = 721A84B7206084D000E01A0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		721A849B206084CF00E01A0E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				721A849C206084CF00E01A0E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		721A84A3206084D000E01A0E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				721A84A4206084D000E01A0E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		721A84BD206084D000E01A0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		721A84BE206084D000E01A0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		721A84C0206084D000E01A0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4C766040D606136ECFEC24E /* Pods-IOTPeer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WGK9EVQ5N9;
+				INFOPLIST_FILE = IOTPeer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dbws.IOTPeer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IOTPeer/IOTPeer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		721A84C1206084D000E01A0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACCBEEB91AA0FACB087ABEA7 /* Pods-IOTPeer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WGK9EVQ5N9;
+				INFOPLIST_FILE = IOTPeer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dbws.IOTPeer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IOTPeer/IOTPeer-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		721A84C3206084D000E01A0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DA104E26C381ADD4DA208B6 /* Pods-IOTPeerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WGK9EVQ5N9;
+				INFOPLIST_FILE = IOTPeerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dbws.IOTPeerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOTPeer.app/IOTPeer";
+			};
+			name = Debug;
+		};
+		721A84C4206084D000E01A0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29B0CC381A1A33E74DFDA49C /* Pods-IOTPeerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WGK9EVQ5N9;
+				INFOPLIST_FILE = IOTPeerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dbws.IOTPeerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOTPeer.app/IOTPeer";
+			};
+			name = Release;
+		};
+		721A84C6206084D000E01A0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CFC2DD551CD8EA3C14ED4AC /* Pods-IOTPeerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WGK9EVQ5N9;
+				INFOPLIST_FILE = IOTPeerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dbws.IOTPeerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IOTPeer;
+			};
+			name = Debug;
+		};
+		721A84C7206084D000E01A0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A8CB44F052A88A045BE2E95 /* Pods-IOTPeerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WGK9EVQ5N9;
+				INFOPLIST_FILE = IOTPeerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dbws.IOTPeerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IOTPeer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		721A848F206084CF00E01A0E /* Build configuration list for PBXProject "IOTPeer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				721A84BD206084D000E01A0E /* Debug */,
+				721A84BE206084D000E01A0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		721A84BF206084D000E01A0E /* Build configuration list for PBXNativeTarget "IOTPeer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				721A84C0206084D000E01A0E /* Debug */,
+				721A84C1206084D000E01A0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		721A84C2206084D000E01A0E /* Build configuration list for PBXNativeTarget "IOTPeerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				721A84C3206084D000E01A0E /* Debug */,
+				721A84C4206084D000E01A0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		721A84C5206084D000E01A0E /* Build configuration list for PBXNativeTarget "IOTPeerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				721A84C6206084D000E01A0E /* Debug */,
+				721A84C7206084D000E01A0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		721A849E206084D000E01A0E /* IOTPeer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				721A849F206084D000E01A0E /* IOTPeer.xcdatamodel */,
+			);
+			currentVersion = 721A849F206084D000E01A0E /* IOTPeer.xcdatamodel */;
+			path = IOTPeer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 721A848C206084CF00E01A0E /* Project object */;
+}
